@@ -12,7 +12,6 @@ class Formatter {
     const exemptWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
 
     return str.split(" ").map((word, index) => {
-      debugger
       return index === 0 || !exemptWords.find(exemptWord => exemptWord === word) ?
         Formatter.capitalize(word) :
         word;
